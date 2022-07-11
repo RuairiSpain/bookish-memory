@@ -67,7 +67,10 @@ I did n't get time to do the challenge justice.  There are a lot of things I wou
 - Add limits to what is possible with Service/Version - Minimum number of versions, use semVer for version
 - Change UUID to use hash with salt to have control of ID in application logic rather than DB - Better migration to other DBs and scale the unique IDs using hash of individual POD name + version + ISO Datetime.
 - Remove Sync feature in TypeOrm and use migration folder to do all DDL (tables, Indexes and Views) and basic CRUD initialization
-- Deployment would be to RDS with at least two AZs for replication and redundancy.  If it's mission critical then switch to Aurora and have multi-DB replication per regoin.
+- Deployment would be to RDS with at least two AZs for replication and redundancy.  If it's mission critical then switch to Aurora and have multi-DB replication per regions.
+- Add authentication using JWTs connected to PassportStrategy with Google and other connections
+= Logging, add enterpirce logging and connection to either ELK or DataDog or CloudWatch
+- Add DB caching of most popular services and top 12 lists.  Cache to redis and invalidate the cached item if the underlying data changes in the database.
 
 ## License
 
