@@ -56,11 +56,18 @@ For connecting to the STG and PROD database, in a real world environment we'd us
 
 Hint for this challenge the password is: SuperSecret!23
 
-## Stay in touch
+## Learning outcomes
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+I did n't get time to do the challenge justice.  There are a lot of things I would like to do but can't devote time to:
+
+- Unit testing
+- E2E testing
+- Creating a K8s Helm folder and YAML/values deployment folder
+- Adding the CRUD to validate Parent-Child data
+- Add limits to what is possible with Service/Version - Minimum number of versions, use semVer for version
+- Change UUID to use hash with salt to have control of ID in application logic rather than DB - Better migration to other DBs and scale the unique IDs using hash of individual POD name + version + ISO Datetime.
+- Remove Sync feature in TypeOrm and use migration folder to do all DDL (tables, Indexes and Views) and basic CRUD initialization
+- Deployment would be to RDS with at least two AZs for replication and redundancy.  If it's mission critical then switch to Aurora and have multi-DB replication per regoin.
 
 ## License
 
