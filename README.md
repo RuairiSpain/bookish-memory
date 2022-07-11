@@ -71,6 +71,7 @@ I did n't get time to do the challenge justice.  There are a lot of things I wou
 - Add authentication using JWTs connected to PassportStrategy with Google and other connections
 = Logging, add enterpirce logging and connection to either ELK or DataDog or CloudWatch
 - Add DB caching of most popular services and top 12 lists.  Cache to redis and invalidate the cached item if the underlying data changes in the database.
+- Add CI/CD Pipeline and run steps for build, linting, unit tests, e2e test (maybe), publish to private Docker hub, deploy the Helm to K8s cluster/namespace.  Setup the same pipeline for DEV/STG/PROD with parameters.  Also allow for easy revert strategy by creating a deploy only pipleline (promote from dev to stg to prod)
 
 ## License
 
